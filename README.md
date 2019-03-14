@@ -27,3 +27,5 @@ Dependencies:
 
  <img src="https://github.com/octivia/mounty-android-test./blob/master/upload_image/img4.jpeg" alt="" width="250" height="450" /> .............
 <img src="https://github.com/octivia/mounty-android-test./blob/master/upload_image/img5.jpeg" alt="" width="250" height="450" /> 
+
+I am using Android 3.3.2 with [androidx](https://developer.android.com/jetpack/androidx) which will help to avoid the conflict among different dependencies.Now we don't have to worry about the version of any library.
