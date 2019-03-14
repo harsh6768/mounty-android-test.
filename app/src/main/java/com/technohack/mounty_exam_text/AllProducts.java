@@ -72,10 +72,6 @@ public class AllProducts extends AppCompatActivity {
         storageReference=firebaseStorage.getReference();
         firebaseFirestore=FirebaseFirestore.getInstance();
 
-        Toolbar toolbar=findViewById(R.id.all_products_toolbarId);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle("All Products");
-        toolbar.setTitleTextColor(getResources().getColor(R.color.whiteColor));
 
         productsList=new ArrayList<>();
         allProductsAdapter=new AllProductsAdapter(this,productsList);

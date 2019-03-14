@@ -77,7 +77,7 @@ public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.
         //to set the image
         void setProductImage(String imageUrl){
 
-            Glide.with(context).load(imageUrl+"jpg").into(productImage);
+            Glide.with(context).load(imageUrl+".jpg").into(productImage);
 
         }
     }
