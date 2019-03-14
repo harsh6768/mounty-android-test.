@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbarId"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/main_product_titleId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/splash"
+                android:hint="Enter Title"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/main_product_descriptionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/splash"
+                android:hint="Enter Description"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/main_product_titleId"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/main_product_titleId"
+                app:layout_constraintTop_toBottomOf="@+id/main_product_titleId"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/main_product_cost_priceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/splash"
+                android:hint="Enter cost price"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/main_product_descriptionId"
+                app:layout_constraintStart_toStartOf="@+id/main_product_descriptionId"
+                app:layout_constraintTop_toBottomOf="@+id/main_product_descriptionId"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/main_product_selling_priceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/splash"
+                android:hint="Enter selling price"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/main_product_cost_priceId"
+                app:layout_constraintStart_toStartOf="@+id/main_product_cost_priceId"
+                app:layout_constraintTop_toBottomOf="@+id/main_product_cost_priceId"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/main_select_image_btnId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorAccent"
+                android:text="Select Product Images "
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/main_product_selling_priceId"
+                app:layout_constraintStart_toStartOf="@+id/main_product_selling_priceId"
+                app:layout_constraintTop_toBottomOf="@+id/main_product_selling_priceId" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/main_select_image_btnId"
+                app:layout_constraintStart_toStartOf="@+id/main_select_image_btnId"
+                app:layout_constraintTop_toBottomOf="@+id/main_select_image_btnId">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/main_save_data_btnId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:text="Save Product Details"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/main_recyclerViewId"
+                app:layout_constraintStart_toStartOf="@+id/main_recyclerViewId"
+                app:layout_constraintTop_toBottomOf="@+id/main_recyclerViewId" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "170928922957",
+    "firebase_url": "https://mounty-f5a3f.firebaseio.com",
+    "project_id": "mounty-f5a3f",
+    "storage_bucket": "mounty-f5a3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170928922957:android:e1dbfc94706d16f4",
+        "android_client_info": {
+          "package_name": "com.technohack.mounty_exam_text"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170928922957-5h7l54bmmc8q0e5o9t9ddb3oarnpgubk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technohack.mounty_exam_text",
+            "certificate_hash": "62215a9cdb0d5d6f8a76c9e9e675486069c3a4e9"
+          }
+        },
+        {
+          "client_id": "170928922957-laln2qjt2cd11l7iaca1h60ci2eh9c6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN04XCUVWpxgSyTpwKj9itTqS-VIEMbXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170928922957-laln2qjt2cd11l7iaca1h60ci2eh9c6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

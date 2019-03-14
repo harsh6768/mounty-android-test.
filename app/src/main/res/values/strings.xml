@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mounty_Exam_Text</string>
+    <string name="title_activity_all_products">AllProducts</string>
+    <string name="menu_all_products">All Products</string>
+    <string name="single_cap">Cap</string>
+    <string name="_80rs">80Rs.</string>
+    <string name="_150">150</string>
+    <string name="cap">Cap</string>
+    <string name="cap_for_boys">Cap for boys</string>
+    <string name="oder_now">Oder Now</string>
+    <string name="_200">200</string>
+</resources>
