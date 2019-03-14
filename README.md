@@ -14,7 +14,7 @@ Dependencies:
 
 ### 3. Glide Library
    
-     (https://github.com/bumptech/glide)
+ (https://github.com/bumptech/glide)
 
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
